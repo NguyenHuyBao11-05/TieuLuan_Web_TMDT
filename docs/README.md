@@ -14,7 +14,7 @@
 | [02-database](02-database/README.md) | Sơ đồ ERD và mô tả các bảng | Hoàn thành |
 | [03-api](03-api/README.md) | Tài liệu API | Đang viết |
 | 04-architecture | Kiến trúc hệ thống, luồng xử lý | Chưa bắt đầu |
-| 05-recommendation | Nghiên cứu Collaborative Filtering và kết quả thực nghiệm | Chưa bắt đầu |
+| [05-recommendation](05-recommendation/README.md) | Nghiên cứu Collaborative Filtering và kết quả thực nghiệm | Đang làm |
 | [diagrams](diagrams/README.md) | Sơ đồ UML (draw.io) và ảnh export | Đang làm |
 | reports | Kế hoạch nghiên cứu, báo cáo tiến độ, slide | Chưa bắt đầu |
 
@@ -24,7 +24,7 @@
 |---|---|
 | Backend | Java 21, Spring Boot 4.1, Spring Data JPA, Spring Security (JWT – OAuth2 Resource Server) |
 | Cơ sở dữ liệu | MySQL 8.4 (InnoDB, utf8mb4) |
-| Frontend | ReactJS (dự kiến) |
+| Frontend | ReactJS 19, Vite |
 | Gợi ý | Collaborative Filtering (User-based, Item-based) |
 
 ## Hướng dẫn chạy backend
@@ -56,3 +56,15 @@
    ```
 
    Ứng dụng chạy ở `http://localhost:8080`. Log có dòng `Started BookstoreApplication` là thành công.
+
+## Hướng dẫn chạy frontend
+
+Cần Node.js 20 trở lên.
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+Mở `http://localhost:5173`. Hiện trang chủ đang dùng dữ liệu mẫu trong `frontend/src/data/books.js`, chưa gọi API backend.

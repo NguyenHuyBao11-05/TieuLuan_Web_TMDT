@@ -32,3 +32,6 @@ build/
 ### VS Code ###
 .vscode/
 *.docx
+### Du lieu thu nghiem goi y ###
+docs/05-recommendation/data/
+__pycache__/
