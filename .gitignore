@@ -36,3 +36,4 @@ build/
 ### Du lieu thu nghiem goi y ###
 docs/recommendation/data/
 __pycache__/
+.ipynb_checkpoints/

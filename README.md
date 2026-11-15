@@ -20,7 +20,7 @@ frontend/               mã nguồn frontend (React)
 docs/
   database/             script tạo cơ sở dữ liệu
   diagrams/             sơ đồ use case (draw.io)
-  recommendation/       thử nghiệm thuật toán gợi ý (Python)
+  recommendation/       thử nghiệm thuật toán gợi ý (Jupyter Notebook)
   *.docx                tài liệu đặc tả, thiết kế, kế hoạch, báo cáo
 ```
 
@@ -41,4 +41,14 @@ docs/
    ```
    Mở http://localhost:5173
 
-Chạy thử nghiệm gợi ý: tải `ratings.csv` và `books.csv` từ https://github.com/zygmuntz/goodbooks-10k vào thư mục `docs/recommendation/data/`, sau đó chạy `python docs/recommendation/cf_experiment.py`.
+## Thử nghiệm gợi ý
+
+File `docs/recommendation/cf_experiment.ipynb`, dữ liệu Goodbooks-10k được tải tự động khi chạy.
+
+- Chạy trên Google Colab: https://colab.research.google.com/github/NguyenHuyBao11-05/TieuLuan_Web_TMDT/blob/main/docs/recommendation/cf_experiment.ipynb
+- Chạy trên máy:
+  ```
+  pip install numpy pandas matplotlib notebook
+  cd docs/recommendation
+  jupyter notebook cf_experiment.ipynb
+  ```
